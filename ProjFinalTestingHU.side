@@ -1,0 +1,1757 @@
+{
+  "id": "7bb6ebd8-4220-49ad-b3b6-4c00739fc9dc",
+  "version": "2.0",
+  "name": "ProjFinal",
+  "url": "http://medivoucher.mindsoftdev.com:8080/cuponesfarmacia",
+  "tests": [{
+    "id": "d9239bd7-7203-4711-9670-5632f318cf29",
+    "name": "1 Login",
+    "commands": [{
+      "id": "da0aebcd-956a-432a-ace9-81f2bc8676da",
+      "comment": "",
+      "command": "open",
+      "target": "http://medivoucher.mindsoftdev.com:8080/cuponesfarmacia/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a80e3b79-69e3-4ce1-8831-06d8f601fabb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3e20bafb-3ea2-4fa9-99ec-cfa488e234a4",
+      "comment": "",
+      "command": "click",
+      "target": "css=a > input",
+      "targets": [
+        ["css=a > input", "css:finder"],
+        ["xpath=//input[@value='Iniciar sesión']", "xpath:attributes"],
+        ["xpath=//body[@id='welcome']/div/a/input", "xpath:idRelative"],
+        ["xpath=//a/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1588123-14b4-471f-aeb9-7ad5b7a51bd9",
+      "comment": "",
+      "command": "type",
+      "target": "id=ox_cuponesfarmacia_SignIn__user",
+      "targets": [
+        ["id=ox_cuponesfarmacia_SignIn__user", "id"],
+        ["name=ox_cuponesfarmacia_SignIn__user", "name"],
+        ["css=#ox_cuponesfarmacia_SignIn__user", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_SignIn__user']", "xpath:attributes"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_SignIn__editor_user']/input[2]", "xpath:idRelative"],
+        ["xpath=//span[2]/input[2]", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "5169854d-0ce2-4fd8-bad7-f9624baf1d33",
+      "comment": "",
+      "command": "type",
+      "target": "id=ox_cuponesfarmacia_SignIn__password",
+      "targets": [
+        ["id=ox_cuponesfarmacia_SignIn__password", "id"],
+        ["name=ox_cuponesfarmacia_SignIn__password", "name"],
+        ["css=#ox_cuponesfarmacia_SignIn__password", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_SignIn__password']", "xpath:attributes"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_SignIn__editor_password']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/span[2]/input[2]", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "dcea4582-1e9e-443b-aaca-b6a51bb61325",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=ox_cuponesfarmacia_SignIn__password",
+      "targets": [
+        ["id=ox_cuponesfarmacia_SignIn__password", "id"],
+        ["name=ox_cuponesfarmacia_SignIn__password", "name"],
+        ["css=#ox_cuponesfarmacia_SignIn__password", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_SignIn__password']", "xpath:attributes"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_SignIn__editor_password']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/span[2]/input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }, {
+    "id": "7544c50d-225e-4a19-87b4-fdc43675dcf6",
+    "name": "2 CRUD Marcas",
+    "commands": [{
+      "id": "03b6809b-b53b-4428-88c1-adcb063458a2",
+      "comment": "",
+      "command": "open",
+      "target": "http://medivoucher.mindsoftdev.com:8080/cuponesfarmacia/m/Cupon",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3aacc8ce-2b15-4d3b-a824-4556e00f11cd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c7d45a70-5cc7-4b6b-9939-1835c4a484ae",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Marca_module > .module-name",
+      "targets": [
+        ["css=#Marca_module > .module-name", "css:finder"],
+        ["xpath=//div[@id='Marca_module']/div", "xpath:idRelative"],
+        ["xpath=//a[3]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2df22e9c-4c1c-4ea2-a921-698f8111e601",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Marca__CRUD___new > .ox-action-label",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Marca__CRUD___new > .ox-action-label", "css:finder"],
+        ["xpath=//a[@id='ox_cuponesfarmacia_Marca__CRUD___new']/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6022d7d9-852a-4670-8850-c03de20a4ff7",
+      "comment": "",
+      "command": "click",
+      "target": "id=ox_cuponesfarmacia_Marca__nombre",
+      "targets": [
+        ["id=ox_cuponesfarmacia_Marca__nombre", "id"],
+        ["name=ox_cuponesfarmacia_Marca__nombre", "name"],
+        ["css=#ox_cuponesfarmacia_Marca__nombre", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Marca__nombre']", "xpath:attributes"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_Marca__editor_nombre']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/span/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09a7af02-9d49-46ad-98d6-94b925f8963d",
+      "comment": "",
+      "command": "type",
+      "target": "id=ox_cuponesfarmacia_Marca__nombre",
+      "targets": [
+        ["id=ox_cuponesfarmacia_Marca__nombre", "id"],
+        ["name=ox_cuponesfarmacia_Marca__nombre", "name"],
+        ["css=#ox_cuponesfarmacia_Marca__nombre", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Marca__nombre']", "xpath:attributes"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_Marca__editor_nombre']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/span/input[2]", "xpath:position"]
+      ],
+      "value": "Siegfried Laboratorios"
+    }, {
+      "id": "39ed0bb6-785c-493f-a371-7cf6420ec3a9",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Marca__bottom_buttons > #ox_cuponesfarmacia_Marca__CRUD___save",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Marca__bottom_buttons > #ox_cuponesfarmacia_Marca__CRUD___save", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Marca__CRUD___save']", "xpath:attributes"],
+        ["xpath=//div[@id='ox_cuponesfarmacia_Marca__bottom_buttons']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc53bf7b-4817-4b52-a580-d310d68864f3",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Marca_module > .module-name",
+      "targets": [
+        ["css=#Marca_module > .module-name", "css:finder"],
+        ["xpath=//div[@id='Marca_module']/div", "xpath:idRelative"],
+        ["xpath=//a[3]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "03e87f01-356f-46e8-be28-b13088609f84",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//tr[@id='ox_cuponesfarmacia_Marca__2']/td[4]/a/div",
+      "targets": [],
+      "value": "Siegfried Laboratorios"
+    }, {
+      "id": "c5a53de6-c398-4ec7-84ac-47e49542b741",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ox_cuponesfarmacia_Marca__list_scroll",
+      "targets": [
+        ["css=.ox_cuponesfarmacia_Marca__list_scroll", "css:finder"],
+        ["xpath=//div[@id='ox_cuponesfarmacia_Marca__view']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8a36711-320d-43c1-9b66-31f55c2c70c2",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Marca__2 .mdi-border-color",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Marca__2 .mdi-border-color", "css:finder"],
+        ["xpath=//tr[@id='ox_cuponesfarmacia_Marca__2']/td/nobr/a/i", "xpath:idRelative"],
+        ["xpath=//tr[5]/td/nobr/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2f023dc-119e-4aa0-94ed-62a0b0d8cd06",
+      "comment": "",
+      "command": "click",
+      "target": "id=ox_cuponesfarmacia_Marca__nombre",
+      "targets": [
+        ["id=ox_cuponesfarmacia_Marca__nombre", "id"],
+        ["name=ox_cuponesfarmacia_Marca__nombre", "name"],
+        ["css=#ox_cuponesfarmacia_Marca__nombre", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Marca__nombre']", "xpath:attributes"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_Marca__editor_nombre']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/span/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1be1419-1129-404c-a4a3-07ee49f3fe0a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ox-layout-detail",
+      "targets": [
+        ["css=.ox-layout-detail", "css:finder"],
+        ["xpath=//div[@id='ox_cuponesfarmacia_Marca__view']/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44eee008-358a-4890-8e37-a0ad9ee96a34",
+      "comment": "",
+      "command": "click",
+      "target": "id=ox_cuponesfarmacia_Marca__nombre",
+      "targets": [
+        ["id=ox_cuponesfarmacia_Marca__nombre", "id"],
+        ["name=ox_cuponesfarmacia_Marca__nombre", "name"],
+        ["css=#ox_cuponesfarmacia_Marca__nombre", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Marca__nombre']", "xpath:attributes"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_Marca__editor_nombre']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/span/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9656c961-1ef9-4711-86c6-aef1f28f9075",
+      "comment": "",
+      "command": "type",
+      "target": "id=ox_cuponesfarmacia_Marca__nombre",
+      "targets": [
+        ["id=ox_cuponesfarmacia_Marca__nombre", "id"],
+        ["name=ox_cuponesfarmacia_Marca__nombre", "name"],
+        ["css=#ox_cuponesfarmacia_Marca__nombre", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Marca__nombre']", "xpath:attributes"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_Marca__editor_nombre']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/span/input[2]", "xpath:position"]
+      ],
+      "value": "Siegfried"
+    }, {
+      "id": "70eea648-4bad-4989-9a44-daf6ecf74598",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Marca__bottom_buttons > #ox_cuponesfarmacia_Marca__CRUD___save",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Marca__bottom_buttons > #ox_cuponesfarmacia_Marca__CRUD___save", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Marca__CRUD___save']", "xpath:attributes"],
+        ["xpath=//div[@id='ox_cuponesfarmacia_Marca__bottom_buttons']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6a3ae9c-10b6-44fc-aec5-6af4f764e0e4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Marca_module > .module-name",
+      "targets": [
+        ["css=#Marca_module > .module-name", "css:finder"],
+        ["xpath=//div[@id='Marca_module']/div", "xpath:idRelative"],
+        ["xpath=//a[3]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "70c27f3e-6e8b-4f0c-9d03-fbfa77c917bd",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//tr[@id='ox_cuponesfarmacia_Marca__2']/td[4]/a/div",
+      "targets": [],
+      "value": "Siegfried"
+    }, {
+      "id": "21e9ec70-e2ac-4a27-a420-ba72a7bd04cd",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "473b51d9-6960-47dc-8287-bf9c7c138a11",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Marca__2 .mdi-delete",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Marca__2 .mdi-delete", "css:finder"],
+        ["xpath=//tr[@id='ox_cuponesfarmacia_Marca__2']/td/nobr/a[2]/i", "xpath:idRelative"],
+        ["xpath=//tr[5]/td/nobr/a[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ddb2b57b-3165-47a1-9db3-6461be988d6a",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Borrar registro de la fila 3: ¿Estás seguro?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1551ae32-5c64-4535-967e-9df712e757c0",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6747edb2-71f7-44f2-99f8-782fcb265cb2",
+    "name": "3 CRUD Presentaciones",
+    "commands": [{
+      "id": "407be04e-224b-4885-a686-d24bac58d216",
+      "comment": "",
+      "command": "open",
+      "target": "http://medivoucher.mindsoftdev.com:8080/cuponesfarmacia/m/Medicamento?init=true",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ebb1d666-31fb-4ae9-8b8e-08dcfd32cefb",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "444d45c5-6917-4ec6-9c77-ce2d9b2a7e2c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Presentacion_module > .module-name",
+      "targets": [
+        ["css=#Presentacion_module > .module-name", "css:finder"],
+        ["xpath=//div[@id='Presentacion_module']/div", "xpath:idRelative"],
+        ["xpath=//a[5]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9d432fc5-dc78-4928-92dc-8b7ee453f396",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Presentacion__CRUD___new > .ox-action-label",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Presentacion__CRUD___new > .ox-action-label", "css:finder"],
+        ["xpath=//a[@id='ox_cuponesfarmacia_Presentacion__CRUD___new']/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "106acb54-2aaa-43f3-9b5a-4f6764c4bd09",
+      "comment": "",
+      "command": "type",
+      "target": "id=ox_cuponesfarmacia_Presentacion__descripcion",
+      "targets": [
+        ["id=ox_cuponesfarmacia_Presentacion__descripcion", "id"],
+        ["name=ox_cuponesfarmacia_Presentacion__descripcion", "name"],
+        ["css=#ox_cuponesfarmacia_Presentacion__descripcion", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Presentacion__descripcion']", "xpath:attributes"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_Presentacion__editor_descripcion']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/span/input[2]", "xpath:position"]
+      ],
+      "value": "Polvo 500g"
+    }, {
+      "id": "67e7dd4c-925e-47d2-8f55-8bd862904d50",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Presentacion__bottom_buttons > #ox_cuponesfarmacia_Presentacion__CRUD___save",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Presentacion__bottom_buttons > #ox_cuponesfarmacia_Presentacion__CRUD___save", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Presentacion__CRUD___save']", "xpath:attributes"],
+        ["xpath=//div[@id='ox_cuponesfarmacia_Presentacion__bottom_buttons']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "637632db-9115-43fd-8356-43429a42acbc",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Presentacion_module > .module-name",
+      "targets": [
+        ["css=#Presentacion_module > .module-name", "css:finder"],
+        ["xpath=//div[@id='Presentacion_module']/div", "xpath:idRelative"],
+        ["xpath=//a[5]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "20e1f930-25eb-4763-b24e-d0884d33e032",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//tr[@id='ox_cuponesfarmacia_Presentacion__3']/td[4]",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Presentacion__3 > .ox-list-odd:nth-child(4)", "css:finder"],
+        ["xpath=//tr[@id='ox_cuponesfarmacia_Presentacion__3']/td[4]", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[4]", "xpath:position"],
+        ["xpath=//td[contains(.,'Polvo 500g')]", "xpath:innerText"]
+      ],
+      "value": "Polvo 500g"
+    }, {
+      "id": "0c260832-5b8a-41fd-8925-de44de8433a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Presentacion__3 .mdi-border-color",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Presentacion__3 .mdi-border-color", "css:finder"],
+        ["xpath=//tr[@id='ox_cuponesfarmacia_Presentacion__3']/td/nobr/a/i", "xpath:idRelative"],
+        ["xpath=//tr[6]/td/nobr/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a323bd02-ec8a-43f3-95f8-50e572343aaf",
+      "comment": "",
+      "command": "click",
+      "target": "id=ox_cuponesfarmacia_Presentacion__descripcion",
+      "targets": [
+        ["id=ox_cuponesfarmacia_Presentacion__descripcion", "id"],
+        ["name=ox_cuponesfarmacia_Presentacion__descripcion", "name"],
+        ["css=#ox_cuponesfarmacia_Presentacion__descripcion", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Presentacion__descripcion']", "xpath:attributes"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_Presentacion__editor_descripcion']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/span/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a59a0f9-70b3-4227-84fa-9bbad8824024",
+      "comment": "",
+      "command": "click",
+      "target": "id=ox_cuponesfarmacia_Presentacion__descripcion",
+      "targets": [
+        ["id=ox_cuponesfarmacia_Presentacion__descripcion", "id"],
+        ["name=ox_cuponesfarmacia_Presentacion__descripcion", "name"],
+        ["css=#ox_cuponesfarmacia_Presentacion__descripcion", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Presentacion__descripcion']", "xpath:attributes"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_Presentacion__editor_descripcion']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/span/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3b2efc61-f1e2-4e94-a700-eded79913f4c",
+      "comment": "",
+      "command": "type",
+      "target": "id=ox_cuponesfarmacia_Presentacion__descripcion",
+      "targets": [
+        ["id=ox_cuponesfarmacia_Presentacion__descripcion", "id"],
+        ["name=ox_cuponesfarmacia_Presentacion__descripcion", "name"],
+        ["css=#ox_cuponesfarmacia_Presentacion__descripcion", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Presentacion__descripcion']", "xpath:attributes"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_Presentacion__editor_descripcion']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/span/input[2]", "xpath:position"]
+      ],
+      "value": "Polvo 1000g"
+    }, {
+      "id": "61837eeb-7a4a-48ac-bf63-2abe4de1d038",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Presentacion__bottom_buttons > #ox_cuponesfarmacia_Presentacion__CRUD___save",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Presentacion__bottom_buttons > #ox_cuponesfarmacia_Presentacion__CRUD___save", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Presentacion__CRUD___save']", "xpath:attributes"],
+        ["xpath=//div[@id='ox_cuponesfarmacia_Presentacion__bottom_buttons']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "014202dc-b135-4e8b-8db6-c6cfc507c1b0",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Presentacion_module > .module-name",
+      "targets": [
+        ["css=#Presentacion_module > .module-name", "css:finder"],
+        ["xpath=//div[@id='Presentacion_module']/div", "xpath:idRelative"],
+        ["xpath=//a[5]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16b22bfe-03e9-4078-8e41-b248f0ff9ea5",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#ox_cuponesfarmacia_Presentacion__3 .ox_cuponesfarmacia_Presentacion__list_col1",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Presentacion__3 .ox_cuponesfarmacia_Presentacion__list_col1", "css:finder"],
+        ["xpath=//tr[@id='ox_cuponesfarmacia_Presentacion__3']/td[4]/a/div", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[4]/a/div", "xpath:position"]
+      ],
+      "value": "Polvo 1000g"
+    }, {
+      "id": "3571f6ea-e043-4df3-b323-b38b960750a0",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b9418909-1b41-4d06-8b11-2b12324ed62a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Presentacion__3 .mdi-delete",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Presentacion__3 .mdi-delete", "css:finder"],
+        ["xpath=//tr[@id='ox_cuponesfarmacia_Presentacion__3']/td/nobr/a[2]/i", "xpath:idRelative"],
+        ["xpath=//tr[6]/td/nobr/a[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5298465-9dfa-478a-8a48-86b116456645",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Borrar registro de la fila 4: ¿Estás seguro?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d54cfe4-149b-4645-be8a-3ef102bcc383",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "02135f22-fc30-407c-a66b-c14ba213eae1",
+    "name": "4 CRUD Farmacias",
+    "commands": [{
+      "id": "2569c536-f13f-49ca-a00b-0042cdb11349",
+      "comment": "",
+      "command": "open",
+      "target": "http://medivoucher.mindsoftdev.com:8080/cuponesfarmacia/m/Medicamento",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e3236da-0423-4347-9aa2-6575ae41a55e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6c3cdd0a-1f11-4f87-82b0-18ac05a570a0",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Farmacia_module > .module-name",
+      "targets": [
+        ["css=#Farmacia_module > .module-name", "css:finder"],
+        ["xpath=//div[@id='Farmacia_module']/div", "xpath:idRelative"],
+        ["xpath=//a[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "093b56b5-b399-48ba-bb89-74b9dc8f0112",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Farmacia__CRUD___new > .ox-action-label",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Farmacia__CRUD___new > .ox-action-label", "css:finder"],
+        ["xpath=//a[@id='ox_cuponesfarmacia_Farmacia__CRUD___new']/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2297b89-b355-4d8f-9af9-ae7bb1b9df69",
+      "comment": "",
+      "command": "type",
+      "target": "id=ox_cuponesfarmacia_Farmacia__nombre",
+      "targets": [
+        ["id=ox_cuponesfarmacia_Farmacia__nombre", "id"],
+        ["name=ox_cuponesfarmacia_Farmacia__nombre", "name"],
+        ["css=#ox_cuponesfarmacia_Farmacia__nombre", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Farmacia__nombre']", "xpath:attributes"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_Farmacia__editor_nombre']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/span/input[2]", "xpath:position"]
+      ],
+      "value": "SanaSana"
+    }, {
+      "id": "2b81d8a7-c8dc-418c-a79b-0ad664974de1",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Farmacia__bottom_buttons > #ox_cuponesfarmacia_Farmacia__CRUD___save",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Farmacia__bottom_buttons > #ox_cuponesfarmacia_Farmacia__CRUD___save", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Farmacia__CRUD___save']", "xpath:attributes"],
+        ["xpath=//div[@id='ox_cuponesfarmacia_Farmacia__bottom_buttons']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3471d3b0-5a82-4d21-b72e-4341f624e5e8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Farmacia_module > .module-name",
+      "targets": [
+        ["css=#Farmacia_module > .module-name", "css:finder"],
+        ["xpath=//div[@id='Farmacia_module']/div", "xpath:idRelative"],
+        ["xpath=//a[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3a50861-41e8-4571-bf55-9ca4dced14fe",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#ox_cuponesfarmacia_Farmacia__3 .ox_cuponesfarmacia_Farmacia__list_col1",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Farmacia__3 .ox_cuponesfarmacia_Farmacia__list_col1", "css:finder"],
+        ["xpath=//tr[@id='ox_cuponesfarmacia_Farmacia__3']/td[4]/a/div", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[4]/a/div", "xpath:position"]
+      ],
+      "value": "SanaSana"
+    }, {
+      "id": "d3d8336b-c7c4-48b0-802b-84ebf6cab289",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Farmacia__3 .mdi-border-color",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Farmacia__3 .mdi-border-color", "css:finder"],
+        ["xpath=//tr[@id='ox_cuponesfarmacia_Farmacia__3']/td/nobr/a/i", "xpath:idRelative"],
+        ["xpath=//tr[6]/td/nobr/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39e87dea-18e8-4d84-934c-1aecf8abd033",
+      "comment": "",
+      "command": "type",
+      "target": "id=ox_cuponesfarmacia_Farmacia__nombre",
+      "targets": [
+        ["id=ox_cuponesfarmacia_Farmacia__nombre", "id"],
+        ["name=ox_cuponesfarmacia_Farmacia__nombre", "name"],
+        ["css=#ox_cuponesfarmacia_Farmacia__nombre", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Farmacia__nombre']", "xpath:attributes"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_Farmacia__editor_nombre']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/span/input[2]", "xpath:position"]
+      ],
+      "value": "Dromayor"
+    }, {
+      "id": "e2dbe8b8-9a84-453f-9e83-87c641aa0e72",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Farmacia__bottom_buttons > #ox_cuponesfarmacia_Farmacia__CRUD___save",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Farmacia__bottom_buttons > #ox_cuponesfarmacia_Farmacia__CRUD___save", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Farmacia__CRUD___save']", "xpath:attributes"],
+        ["xpath=//div[@id='ox_cuponesfarmacia_Farmacia__bottom_buttons']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "507e6f21-55f0-4cfb-9248-ded0ae348362",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#Marca_module > .module-name",
+      "targets": [
+        ["css=#Marca_module > .module-name", "css:finder"],
+        ["xpath=//div[@id='Marca_module']/div", "xpath:idRelative"],
+        ["xpath=//a[3]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1dec6a6e-6ad8-4db8-9a57-f594c302cf24",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=#Marca_module > .module-name",
+      "targets": [
+        ["css=#Marca_module > .module-name", "css:finder"],
+        ["xpath=//div[@id='Marca_module']/div", "xpath:idRelative"],
+        ["xpath=//a[3]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09d068eb-4d3d-4f80-84b3-e9900d8cb424",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Farmacia_module > .module-name",
+      "targets": [
+        ["css=#Farmacia_module > .module-name", "css:finder"],
+        ["xpath=//div[@id='Farmacia_module']/div", "xpath:idRelative"],
+        ["xpath=//a[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f39b586-088f-4bb7-9369-e178efc8d567",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#ox_cuponesfarmacia_Farmacia__3 .ox_cuponesfarmacia_Farmacia__list_col1",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Farmacia__3 .ox_cuponesfarmacia_Farmacia__list_col1", "css:finder"],
+        ["xpath=//tr[@id='ox_cuponesfarmacia_Farmacia__3']/td[4]/a/div", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[4]/a/div", "xpath:position"]
+      ],
+      "value": "Dromayor"
+    }, {
+      "id": "e7007c6f-9616-4b54-83cd-08c869d4f8fa",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1167d4fe-82d6-4ec9-a7a3-9a736254318a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Farmacia__3 .mdi-delete",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Farmacia__3 .mdi-delete", "css:finder"],
+        ["xpath=//tr[@id='ox_cuponesfarmacia_Farmacia__3']/td/nobr/a[2]/i", "xpath:idRelative"],
+        ["xpath=//tr[6]/td/nobr/a[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e4406e4-1244-4967-9156-935607a4e086",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Borrar registro de la fila 4: ¿Estás seguro?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b422e8ef-fd73-486e-9bda-235daa90610e",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "475e6e0c-2a2b-42dd-ae6a-2f538b70eb99",
+    "name": "5 CRUD Medicaciones",
+    "commands": [{
+      "id": "71d258f2-a24e-4223-9b8a-1ad96f9a294f",
+      "comment": "",
+      "command": "open",
+      "target": "http://medivoucher.mindsoftdev.com:8080/cuponesfarmacia/m/Farmacia",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b6eaa1f7-9e22-4187-a345-48ce9f0a06c6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "587a8da9-dd3e-4ded-b5b0-45c21d7d8efd",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Medicamento_module > .module-name",
+      "targets": [
+        ["css=#Medicamento_module > .module-name", "css:finder"],
+        ["xpath=//div[@id='Medicamento_module']/div", "xpath:idRelative"],
+        ["xpath=//a[4]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5143854b-6a04-476c-826a-424dfd8d8831",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Medicamento__CRUD___new > .ox-action-label",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Medicamento__CRUD___new > .ox-action-label", "css:finder"],
+        ["xpath=//a[@id='ox_cuponesfarmacia_Medicamento__CRUD___new']/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7d27d738-970a-4bd0-be33-27361f29c6f5",
+      "comment": "",
+      "command": "type",
+      "target": "id=ox_cuponesfarmacia_Medicamento__nombre",
+      "targets": [
+        ["id=ox_cuponesfarmacia_Medicamento__nombre", "id"],
+        ["name=ox_cuponesfarmacia_Medicamento__nombre", "name"],
+        ["css=#ox_cuponesfarmacia_Medicamento__nombre", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Medicamento__nombre']", "xpath:attributes"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_Medicamento__editor_nombre']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/span/input[2]", "xpath:position"]
+      ],
+      "value": "Ensure Advanced"
+    }, {
+      "id": "81bc284d-564d-4655-a7d1-610a5c58cabe",
+      "comment": "",
+      "command": "click",
+      "target": "name=ox_cuponesfarmacia_Medicamento__marca___idMarca__CONTROL__",
+      "targets": [
+        ["name=ox_cuponesfarmacia_Medicamento__marca___idMarca__CONTROL__", "name"],
+        ["css=#ox_cuponesfarmacia_Medicamento__reference_editor_marca .xava_select", "css:finder"],
+        ["xpath=//input[@name='ox_cuponesfarmacia_Medicamento__marca___idMarca__CONTROL__']", "xpath:attributes"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_Medicamento__reference_editor_marca']/span/input", "xpath:idRelative"],
+        ["xpath=//div[8]/span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c135025-d1a3-4d01-bb37-041795eb2171",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Medicamento__reference_editor_marca .xava_descriptions_editor_open > .mdi",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Medicamento__reference_editor_marca .xava_descriptions_editor_open > .mdi", "css:finder"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_Medicamento__reference_editor_marca']/span/a/i", "xpath:idRelative"],
+        ["xpath=//div[8]/span/span/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "814027ac-ea07-4b9e-bcb2-3c79ab21b41e",
+      "comment": "",
+      "command": "click",
+      "target": "id=ui-id-3",
+      "targets": [
+        ["id=ui-id-3", "id"],
+        ["css=#ui-id-3", "css:finder"],
+        ["xpath=//div[@id='ui-id-3']", "xpath:attributes"],
+        ["xpath=//ul[@id='ui-id-1']/li/div", "xpath:idRelative"],
+        ["xpath=//li/div", "xpath:position"],
+        ["xpath=//div[contains(.,'Abbott')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "61bfb14f-bede-43ac-ab7a-7bd4497b5d88",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Medicamento__reference_editor_presentacion .xava_descriptions_editor_open > .mdi",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Medicamento__reference_editor_presentacion .xava_descriptions_editor_open > .mdi", "css:finder"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_Medicamento__reference_editor_presentacion']/span/a/i", "xpath:idRelative"],
+        ["xpath=//div[11]/span/span/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e784a2e-d610-4b80-b23d-ce56f4def444",
+      "comment": "",
+      "command": "click",
+      "target": "id=ui-id-6",
+      "targets": [
+        ["id=ui-id-6", "id"],
+        ["css=#ui-id-6", "css:finder"],
+        ["xpath=//div[@id='ui-id-6']", "xpath:attributes"],
+        ["xpath=//ul[@id='ui-id-2']/li[2]/div", "xpath:idRelative"],
+        ["xpath=//ul[2]/li[2]/div", "xpath:position"],
+        ["xpath=//div[contains(.,'Polvo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "95ed6b0a-386d-41b1-bf66-7c252094d071",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ox-button-bar-button:nth-child(1) > .xava_action > .ox-action-label",
+      "targets": [
+        ["css=.ox-button-bar-button:nth-child(1) > .xava_action > .ox-action-label", "css:finder"],
+        ["xpath=//div[@id='ox_cuponesfarmacia_Medicamento__collection_farmacias___']/table/tbody/tr/td/span/a/span", "xpath:idRelative"],
+        ["xpath=//td/span/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f8fbb70-b36b-4469-ac4a-ba78c0b865d5",
+      "comment": "",
+      "command": "click",
+      "target": "name=ox_cuponesfarmacia_Medicamento__xava_selected",
+      "targets": [
+        ["name=ox_cuponesfarmacia_Medicamento__xava_selected", "name"],
+        ["css=#ox_cuponesfarmacia_Medicamento__0 .xava_selected", "css:finder"],
+        ["xpath=//input[@name='ox_cuponesfarmacia_Medicamento__xava_selected']", "xpath:attributes"],
+        ["xpath=//tr[@id='ox_cuponesfarmacia_Medicamento__0']/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "133e174e-ec0a-4320-b294-037fd9a26b67",
+      "comment": "",
+      "command": "click",
+      "target": "id=ox_cuponesfarmacia_Medicamento__AddToCollection___add",
+      "targets": [
+        ["id=ox_cuponesfarmacia_Medicamento__AddToCollection___add", "id"],
+        ["css=#ox_cuponesfarmacia_Medicamento__AddToCollection___add", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Medicamento__AddToCollection___add']", "xpath:attributes"],
+        ["xpath=//div[@id='ox_cuponesfarmacia_Medicamento__bottom_buttons']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d18c7cee-50a4-43b9-9859-e23db9eef434",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Medicamento__bottom_buttons > #ox_cuponesfarmacia_Medicamento__CRUD___save",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Medicamento__bottom_buttons > #ox_cuponesfarmacia_Medicamento__CRUD___save", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Medicamento__CRUD___save']", "xpath:attributes"],
+        ["xpath=//div[@id='ox_cuponesfarmacia_Medicamento__bottom_buttons']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6cd75e53-d86c-4c0f-b65e-6b83ff631e8b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Medicamento_module > .module-name",
+      "targets": [
+        ["css=#Medicamento_module > .module-name", "css:finder"],
+        ["xpath=//div[@id='Medicamento_module']/div", "xpath:idRelative"],
+        ["xpath=//a[4]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "721f9661-a4ae-4676-9bcd-047f9c270d54",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#ox_cuponesfarmacia_Medicamento__2 .ox_cuponesfarmacia_Medicamento__list_col1",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Medicamento__2 .ox_cuponesfarmacia_Medicamento__list_col1", "css:finder"],
+        ["xpath=//tr[@id='ox_cuponesfarmacia_Medicamento__2']/td[4]/a/div", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[4]/a/div", "xpath:position"]
+      ],
+      "value": "Ensure Advanced"
+    }, {
+      "id": "6ef4a947-97b9-497f-b245-b3b8c5bdac69",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#ox_cuponesfarmacia_Medicamento__2 .ox_cuponesfarmacia_Medicamento__list_col3",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Medicamento__2 .ox_cuponesfarmacia_Medicamento__list_col3", "css:finder"],
+        ["xpath=//tr[@id='ox_cuponesfarmacia_Medicamento__2']/td[6]/a/div", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[6]/a/div", "xpath:position"]
+      ],
+      "value": "Abbott"
+    }, {
+      "id": "4f064e90-9768-468c-90cf-59ac1279f237",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#ox_cuponesfarmacia_Medicamento__2 .ox_cuponesfarmacia_Medicamento__list_col5",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Medicamento__2 .ox_cuponesfarmacia_Medicamento__list_col5", "css:finder"],
+        ["xpath=//tr[@id='ox_cuponesfarmacia_Medicamento__2']/td[8]/a/div", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[8]/a/div", "xpath:position"]
+      ],
+      "value": "Polvo"
+    }, {
+      "id": "8c55757d-1af9-4170-8f18-930bc2168e92",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Medicamento__2 .mdi-border-color",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Medicamento__2 .mdi-border-color", "css:finder"],
+        ["xpath=//tr[@id='ox_cuponesfarmacia_Medicamento__2']/td/nobr/a/i", "xpath:idRelative"],
+        ["xpath=//tr[5]/td/nobr/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16e48899-8a7a-47ec-a493-e09bd6ec21a7",
+      "comment": "",
+      "command": "click",
+      "target": "id=ox_cuponesfarmacia_Medicamento__nombre",
+      "targets": [
+        ["id=ox_cuponesfarmacia_Medicamento__nombre", "id"],
+        ["name=ox_cuponesfarmacia_Medicamento__nombre", "name"],
+        ["css=#ox_cuponesfarmacia_Medicamento__nombre", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Medicamento__nombre']", "xpath:attributes"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_Medicamento__editor_nombre']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/span/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6dbc8668-b567-43e9-b2ab-b69fce121919",
+      "comment": "",
+      "command": "type",
+      "target": "id=ox_cuponesfarmacia_Medicamento__nombre",
+      "targets": [
+        ["id=ox_cuponesfarmacia_Medicamento__nombre", "id"],
+        ["name=ox_cuponesfarmacia_Medicamento__nombre", "name"],
+        ["css=#ox_cuponesfarmacia_Medicamento__nombre", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Medicamento__nombre']", "xpath:attributes"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_Medicamento__editor_nombre']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/span/input[2]", "xpath:position"]
+      ],
+      "value": "Ensure Clinical"
+    }, {
+      "id": "5ddeee45-ba9d-4eef-8cd3-5fba402a5495",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Medicamento__bottom_buttons > #ox_cuponesfarmacia_Medicamento__CRUD___save",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Medicamento__bottom_buttons > #ox_cuponesfarmacia_Medicamento__CRUD___save", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Medicamento__CRUD___save']", "xpath:attributes"],
+        ["xpath=//div[@id='ox_cuponesfarmacia_Medicamento__bottom_buttons']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8f1b20a-7960-4710-92bf-9ba965e2d3cd",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Medicamento_module > .module-name",
+      "targets": [
+        ["css=#Medicamento_module > .module-name", "css:finder"],
+        ["xpath=//div[@id='Medicamento_module']/div", "xpath:idRelative"],
+        ["xpath=//a[4]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9121073c-2e62-43a0-a4c2-ecbcae014ee0",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=#ox_cuponesfarmacia_Medicamento__2 .ox_cuponesfarmacia_Medicamento__list_col1",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Medicamento__2 .ox_cuponesfarmacia_Medicamento__list_col1", "css:finder"],
+        ["xpath=//tr[@id='ox_cuponesfarmacia_Medicamento__2']/td[4]/a/div", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[4]/a/div", "xpath:position"]
+      ],
+      "value": "Ensure Clinical"
+    }, {
+      "id": "ab2024b4-621a-43ab-9e8e-e055951173ab",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "891c05a5-5e84-457a-9a0f-99b08375c9a8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Medicamento__2 .mdi-delete",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Medicamento__2 .mdi-delete", "css:finder"],
+        ["xpath=//tr[@id='ox_cuponesfarmacia_Medicamento__2']/td/nobr/a[2]/i", "xpath:idRelative"],
+        ["xpath=//tr[5]/td/nobr/a[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0ee4b9b-fd8d-42fc-a366-eef2e2a48a70",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Borrar registro de la fila 3: ¿Estás seguro?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b13bd995-853f-4b0a-b4a0-619fc2a17a71",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "8a6fcec7-c771-4c83-b58d-51f73239e7f4",
+    "name": "6 CRUD Promociones",
+    "commands": [{
+      "id": "de2f1552-80b4-4173-91a7-e3b2ffb037c7",
+      "comment": "",
+      "command": "open",
+      "target": "http://medivoucher.mindsoftdev.com:8080/cuponesfarmacia/m/Promocion",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "def8e83f-aa5d-481d-ba41-34adb4024e95",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f25b57a2-8467-41ba-a5e6-665ef9a4af94",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Promocion_module > .module-name",
+      "targets": [
+        ["css=#Promocion_module > .module-name", "css:finder"],
+        ["xpath=//div[@id='Promocion_module']/div", "xpath:idRelative"],
+        ["xpath=//a[6]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cfdd19f9-5be5-4d31-87ba-5ec8b72ca565",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Promocion__CRUD___new > .ox-action-label",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Promocion__CRUD___new > .ox-action-label", "css:finder"],
+        ["xpath=//a[@id='ox_cuponesfarmacia_Promocion__CRUD___new']/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8134a64-d59d-43bf-8667-e61b8e6039b7",
+      "comment": "",
+      "command": "click",
+      "target": "id=ox_cuponesfarmacia_Promocion__descripcion",
+      "targets": [
+        ["id=ox_cuponesfarmacia_Promocion__descripcion", "id"],
+        ["name=ox_cuponesfarmacia_Promocion__descripcion", "name"],
+        ["css=#ox_cuponesfarmacia_Promocion__descripcion", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Promocion__descripcion']", "xpath:attributes"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_Promocion__editor_descripcion']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/span/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8aec76ac-2383-4d67-8ed3-5bf82c11b46f",
+      "comment": "",
+      "command": "type",
+      "target": "id=ox_cuponesfarmacia_Promocion__descripcion",
+      "targets": [
+        ["id=ox_cuponesfarmacia_Promocion__descripcion", "id"],
+        ["name=ox_cuponesfarmacia_Promocion__descripcion", "name"],
+        ["css=#ox_cuponesfarmacia_Promocion__descripcion", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Promocion__descripcion']", "xpath:attributes"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_Promocion__editor_descripcion']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/span/input[2]", "xpath:position"]
+      ],
+      "value": "Compra 2 Paga 1"
+    }, {
+      "id": "f02d43d4-821e-4846-a81f-fcf14fcfbc0b",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Promocion__editor_fechaInicio .mdi",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Promocion__editor_fechaInicio .mdi", "css:finder"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_Promocion__editor_fechaInicio']/span/a/i", "xpath:idRelative"],
+        ["xpath=//div[8]/span/span/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4df15352-2083-465f-bf35-e4376ed7b0e5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.open .flatpickr-day:nth-child(1)",
+      "targets": [
+        ["css=.open .flatpickr-day:nth-child(1)", "css:finder"],
+        ["xpath=//div[2]/div/div[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "07d0a613-bbc2-4368-9bc6-ffed94f04350",
+      "comment": "",
+      "command": "type",
+      "target": "id=ox_cuponesfarmacia_Promocion__fechaInicio",
+      "targets": [
+        ["id=ox_cuponesfarmacia_Promocion__fechaInicio", "id"],
+        ["name=ox_cuponesfarmacia_Promocion__fechaInicio", "name"],
+        ["css=#ox_cuponesfarmacia_Promocion__fechaInicio", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Promocion__fechaInicio']", "xpath:attributes"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_Promocion__editor_fechaInicio']/span/input", "xpath:idRelative"],
+        ["xpath=//div[8]/span/span/input", "xpath:position"]
+      ],
+      "value": "01/07/2024"
+    }, {
+      "id": "318514eb-a8d4-47da-bb67-29b8658da25f",
+      "comment": "",
+      "command": "type",
+      "target": "id=ox_cuponesfarmacia_Promocion__fechaInicio",
+      "targets": [
+        ["id=ox_cuponesfarmacia_Promocion__fechaInicio", "id"],
+        ["name=ox_cuponesfarmacia_Promocion__fechaInicio", "name"],
+        ["css=#ox_cuponesfarmacia_Promocion__fechaInicio", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Promocion__fechaInicio']", "xpath:attributes"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_Promocion__editor_fechaInicio']/span/input", "xpath:idRelative"],
+        ["xpath=//div[8]/span/span/input", "xpath:position"]
+      ],
+      "value": "01/07/2024"
+    }, {
+      "id": "39a1a5d9-cba5-44f8-85e1-bc9f162d8685",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Promocion__editor_fechaFin .mdi",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Promocion__editor_fechaFin .mdi", "css:finder"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_Promocion__editor_fechaFin']/span/a/i", "xpath:idRelative"],
+        ["xpath=//div[11]/span/span/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "11507713-679b-4367-b823-cd0b74524e54",
+      "comment": "",
+      "command": "click",
+      "target": "css=.open .flatpickr-day:nth-child(14)",
+      "targets": [
+        ["css=.open .flatpickr-day:nth-child(14)", "css:finder"],
+        ["xpath=//div[12]/div[2]/div/div[2]/div/span[14]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c0af849-0be0-4ae4-9954-bafec6fc845b",
+      "comment": "",
+      "command": "type",
+      "target": "id=ox_cuponesfarmacia_Promocion__fechaFin",
+      "targets": [
+        ["id=ox_cuponesfarmacia_Promocion__fechaFin", "id"],
+        ["name=ox_cuponesfarmacia_Promocion__fechaFin", "name"],
+        ["css=#ox_cuponesfarmacia_Promocion__fechaFin", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Promocion__fechaFin']", "xpath:attributes"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_Promocion__editor_fechaFin']/span/input", "xpath:idRelative"],
+        ["xpath=//div[11]/span/span/input", "xpath:position"]
+      ],
+      "value": "14/07/2024"
+    }, {
+      "id": "c9b646f2-5c96-4e88-833e-64182f6fe14c",
+      "comment": "",
+      "command": "type",
+      "target": "id=ox_cuponesfarmacia_Promocion__fechaFin",
+      "targets": [
+        ["id=ox_cuponesfarmacia_Promocion__fechaFin", "id"],
+        ["name=ox_cuponesfarmacia_Promocion__fechaFin", "name"],
+        ["css=#ox_cuponesfarmacia_Promocion__fechaFin", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Promocion__fechaFin']", "xpath:attributes"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_Promocion__editor_fechaFin']/span/input", "xpath:idRelative"],
+        ["xpath=//div[11]/span/span/input", "xpath:position"]
+      ],
+      "value": "14/07/2024"
+    }, {
+      "id": "734ea71d-64f8-48c6-8e49-2e0c83a56997",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Promocion__bottom_buttons > #ox_cuponesfarmacia_Promocion__CRUD___save",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Promocion__bottom_buttons > #ox_cuponesfarmacia_Promocion__CRUD___save", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Promocion__CRUD___save']", "xpath:attributes"],
+        ["xpath=//div[@id='ox_cuponesfarmacia_Promocion__bottom_buttons']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d8bf311e-4c4e-4ca4-b67b-d705ac8f39fe",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Promocion_module > .module-name",
+      "targets": [
+        ["css=#Promocion_module > .module-name", "css:finder"],
+        ["xpath=//div[@id='Promocion_module']/div", "xpath:idRelative"],
+        ["xpath=//a[6]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "075c9d04-4932-4746-ae85-0ba5bdc0b7fc",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.ox-list-odd .ox_cuponesfarmacia_Promocion__list_col1",
+      "targets": [
+        ["css=.ox-list-odd .ox_cuponesfarmacia_Promocion__list_col1", "css:finder"],
+        ["xpath=//tr[@id='ox_cuponesfarmacia_Promocion__1']/td[4]/a/div", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[4]/a/div", "xpath:position"]
+      ],
+      "value": "Compra 2 Paga 1"
+    }, {
+      "id": "0f866a0a-a62c-4133-9d22-76f24a18dd61",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.ox-list-odd .ox_cuponesfarmacia_Promocion__list_col2",
+      "targets": [
+        ["css=.ox-list-odd .ox_cuponesfarmacia_Promocion__list_col2", "css:finder"],
+        ["xpath=//tr[@id='ox_cuponesfarmacia_Promocion__1']/td[5]/a/div", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[5]/a/div", "xpath:position"]
+      ],
+      "value": "01/07/2024"
+    }, {
+      "id": "705cf614-d1d2-4a5d-9930-7186ba9e0508",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.ox-list-odd .ox_cuponesfarmacia_Promocion__list_col3",
+      "targets": [
+        ["css=.ox-list-odd .ox_cuponesfarmacia_Promocion__list_col3", "css:finder"],
+        ["xpath=//tr[@id='ox_cuponesfarmacia_Promocion__1']/td[6]/a/div", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[6]/a/div", "xpath:position"]
+      ],
+      "value": "14/07/2024"
+    }, {
+      "id": "1a0c0170-8acd-49e7-92b0-56b8334deec7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ox-list-odd .mdi-border-color",
+      "targets": [
+        ["css=.ox-list-odd .mdi-border-color", "css:finder"],
+        ["xpath=//tr[@id='ox_cuponesfarmacia_Promocion__1']/td/nobr/a/i", "xpath:idRelative"],
+        ["xpath=//tr[4]/td/nobr/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "13035a71-539f-44db-8fd5-a2be7a0b9b71",
+      "comment": "",
+      "command": "click",
+      "target": "id=ox_cuponesfarmacia_Promocion__descripcion",
+      "targets": [
+        ["id=ox_cuponesfarmacia_Promocion__descripcion", "id"],
+        ["name=ox_cuponesfarmacia_Promocion__descripcion", "name"],
+        ["css=#ox_cuponesfarmacia_Promocion__descripcion", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Promocion__descripcion']", "xpath:attributes"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_Promocion__editor_descripcion']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/span/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4e39168-ca38-4368-a987-0eea7456fa73",
+      "comment": "",
+      "command": "click",
+      "target": "id=ox_cuponesfarmacia_Promocion__descripcion",
+      "targets": [
+        ["id=ox_cuponesfarmacia_Promocion__descripcion", "id"],
+        ["name=ox_cuponesfarmacia_Promocion__descripcion", "name"],
+        ["css=#ox_cuponesfarmacia_Promocion__descripcion", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Promocion__descripcion']", "xpath:attributes"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_Promocion__editor_descripcion']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/span/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc8e5cb9-78f4-49a1-8e99-51657559c837",
+      "comment": "",
+      "command": "type",
+      "target": "id=ox_cuponesfarmacia_Promocion__descripcion",
+      "targets": [
+        ["id=ox_cuponesfarmacia_Promocion__descripcion", "id"],
+        ["name=ox_cuponesfarmacia_Promocion__descripcion", "name"],
+        ["css=#ox_cuponesfarmacia_Promocion__descripcion", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Promocion__descripcion']", "xpath:attributes"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_Promocion__editor_descripcion']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/span/input[2]", "xpath:position"]
+      ],
+      "value": "Compra 3 Paga 2"
+    }, {
+      "id": "c0d27bfc-cfb9-4aa0-9f69-1319f70d1c41",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Promocion__bottom_buttons > #ox_cuponesfarmacia_Promocion__CRUD___save",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Promocion__bottom_buttons > #ox_cuponesfarmacia_Promocion__CRUD___save", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Promocion__CRUD___save']", "xpath:attributes"],
+        ["xpath=//div[@id='ox_cuponesfarmacia_Promocion__bottom_buttons']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "46d5a24c-eef8-4454-b5b8-ca03901911a0",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Promocion_module > .module-name",
+      "targets": [
+        ["css=#Promocion_module > .module-name", "css:finder"],
+        ["xpath=//div[@id='Promocion_module']/div", "xpath:idRelative"],
+        ["xpath=//a[6]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fed66ce-486e-4f38-bba6-d05ff4c8bd82",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.ox-list-odd .ox_cuponesfarmacia_Promocion__list_col1",
+      "targets": [
+        ["css=.ox-list-odd .ox_cuponesfarmacia_Promocion__list_col1", "css:finder"],
+        ["xpath=//tr[@id='ox_cuponesfarmacia_Promocion__1']/td[4]/a/div", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[4]/a/div", "xpath:position"]
+      ],
+      "value": "Compra 3 Paga 2"
+    }, {
+      "id": "4579970e-a083-44a1-802c-bd8a72db7ce3",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa1fad55-6da7-4c02-af96-5b7f7a78667f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ox-list-odd .mdi-delete",
+      "targets": [
+        ["css=.ox-list-odd .mdi-delete", "css:finder"],
+        ["xpath=//tr[@id='ox_cuponesfarmacia_Promocion__1']/td/nobr/a[2]/i", "xpath:idRelative"],
+        ["xpath=//tr[4]/td/nobr/a[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a1a2aae7-4eab-4398-95da-3227b37387fa",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Borrar registro de la fila 2: ¿Estás seguro?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e11103d1-e2b4-4940-9a89-06574396a743",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5fa1159d-3802-4ade-88b1-151c9f166480",
+    "name": "7 CRUD Cupones",
+    "commands": [{
+      "id": "dd78c21d-9017-441e-8887-9320dab3e0a3",
+      "comment": "",
+      "command": "open",
+      "target": "http://medivoucher.mindsoftdev.com:8080/cuponesfarmacia/m/Cupon",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1df28af4-9923-4efa-9f3e-2af6ed52eaa4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c502d6b-7bc6-4cdf-ba6e-e8cacf1043a8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Cupon_module > .module-name",
+      "targets": [
+        ["css=#Cupon_module > .module-name", "css:finder"],
+        ["xpath=//div[@id='Cupon_module']/div", "xpath:idRelative"],
+        ["xpath=//a/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c640ff7-882b-4a23-8979-67368ae6a3e2",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Cupon__CRUD___new > .ox-action-label",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Cupon__CRUD___new > .ox-action-label", "css:finder"],
+        ["xpath=//a[@id='ox_cuponesfarmacia_Cupon__CRUD___new']/span", "xpath:idRelative"],
+        ["xpath=//a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef8280b8-4667-482c-9880-24c1470d34ed",
+      "comment": "",
+      "command": "type",
+      "target": "id=ox_cuponesfarmacia_Cupon__descripcion",
+      "targets": [
+        ["id=ox_cuponesfarmacia_Cupon__descripcion", "id"],
+        ["name=ox_cuponesfarmacia_Cupon__descripcion", "name"],
+        ["css=#ox_cuponesfarmacia_Cupon__descripcion", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Cupon__descripcion']", "xpath:attributes"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_Cupon__editor_descripcion']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/span/input[2]", "xpath:position"]
+      ],
+      "value": "Insulina de larga duración 3x2"
+    }, {
+      "id": "329285fb-540d-414e-842e-d1c5ed19611d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.xava_descriptions_editor_open > .mdi",
+      "targets": [
+        ["css=.xava_descriptions_editor_open > .mdi", "css:finder"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_Cupon__reference_editor_promocion']/span/a/i", "xpath:idRelative"],
+        ["xpath=//div[11]/span/span/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3de6d031-3624-4426-854a-9967ce3f56c1",
+      "comment": "",
+      "command": "click",
+      "target": "id=ui-id-2",
+      "targets": [
+        ["id=ui-id-2", "id"],
+        ["css=#ui-id-2", "css:finder"],
+        ["xpath=//div[@id='ui-id-2']", "xpath:attributes"],
+        ["xpath=//ul[@id='ui-id-1']/li/div", "xpath:idRelative"],
+        ["xpath=//li/div", "xpath:position"],
+        ["xpath=//div[contains(.,'Regreso a clases')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "332de4da-3a64-470c-85ee-a0e265a2b17f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Cupon__collection_farmaciasAceptadas___ .ox-button-bar-button:nth-child(1) .ox-action-label",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Cupon__collection_farmaciasAceptadas___ .ox-button-bar-button:nth-child(1) .ox-action-label", "css:finder"],
+        ["xpath=//div[@id='ox_cuponesfarmacia_Cupon__collection_farmaciasAceptadas___']/table/tbody/tr/td/span/a/span", "xpath:idRelative"],
+        ["xpath=//td/span/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a11139c9-de6e-43ce-956c-c18d2d0c507c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ox-list-odd > .xava_selected",
+      "targets": [
+        ["css=.ox-list-odd > .xava_selected", "css:finder"],
+        ["xpath=(//input[@name='ox_cuponesfarmacia_Cupon__xava_selected'])[2]", "xpath:attributes"],
+        ["xpath=//tr[@id='ox_cuponesfarmacia_Cupon__1']/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "902d8616-9c31-477d-80f6-5f34f512f0b3",
+      "comment": "",
+      "command": "click",
+      "target": "id=ox_cuponesfarmacia_Cupon__AddToCollection___add",
+      "targets": [
+        ["id=ox_cuponesfarmacia_Cupon__AddToCollection___add", "id"],
+        ["css=#ox_cuponesfarmacia_Cupon__AddToCollection___add", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Cupon__AddToCollection___add']", "xpath:attributes"],
+        ["xpath=//div[@id='ox_cuponesfarmacia_Cupon__bottom_buttons']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3fdfbc7-ecc8-473a-a4fb-9bef625d2ef4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Cupon__collection_medicamentosAplicables___ .mdi-table-row-plus-after",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Cupon__collection_medicamentosAplicables___ .mdi-table-row-plus-after", "css:finder"],
+        ["xpath=//div[@id='ox_cuponesfarmacia_Cupon__collection_medicamentosAplicables___']/table/tbody/tr/td/span/a/i", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/div/table/tbody/tr/td/span/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "47361ff4-5743-46f7-a0d6-cbbc7ad252d4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ox-list-odd > .xava_selected",
+      "targets": [
+        ["css=.ox-list-odd > .xava_selected", "css:finder"],
+        ["xpath=(//input[@name='ox_cuponesfarmacia_Cupon__xava_selected'])[2]", "xpath:attributes"],
+        ["xpath=//tr[@id='ox_cuponesfarmacia_Cupon__1']/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e646484d-1845-47ce-9392-05fe3dfc771a",
+      "comment": "",
+      "command": "click",
+      "target": "id=ox_cuponesfarmacia_Cupon__AddToCollection___add",
+      "targets": [
+        ["id=ox_cuponesfarmacia_Cupon__AddToCollection___add", "id"],
+        ["css=#ox_cuponesfarmacia_Cupon__AddToCollection___add", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Cupon__AddToCollection___add']", "xpath:attributes"],
+        ["xpath=//div[@id='ox_cuponesfarmacia_Cupon__bottom_buttons']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9db1d17f-46e8-44d4-918c-f3b54921a842",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Cupon__bottom_buttons > #ox_cuponesfarmacia_Cupon__CRUD___save",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Cupon__bottom_buttons > #ox_cuponesfarmacia_Cupon__CRUD___save", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Cupon__CRUD___save']", "xpath:attributes"],
+        ["xpath=//div[@id='ox_cuponesfarmacia_Cupon__bottom_buttons']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21b93903-f8fe-455e-b4b8-6b5b210ab333",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Cupon_module > .module-name",
+      "targets": [
+        ["css=#Cupon_module > .module-name", "css:finder"],
+        ["xpath=//div[@id='Cupon_module']/div", "xpath:idRelative"],
+        ["xpath=//a/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c61ea3c9-e027-4858-bf7d-bfe4770bdc3e",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "css=#ox_cuponesfarmacia_Cupon__0 > .ox-list-pair:nth-child(5)",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Cupon__0 > .ox-list-pair:nth-child(5)", "css:finder"],
+        ["xpath=//tr[@id='ox_cuponesfarmacia_Cupon__0']/td[5]", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1dfc772b-d522-47e6-9c2d-a3727c8a0b61",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Cupon__0 .mdi-border-color",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Cupon__0 .mdi-border-color", "css:finder"],
+        ["xpath=//tr[@id='ox_cuponesfarmacia_Cupon__0']/td/nobr/a/i", "xpath:idRelative"],
+        ["xpath=//td/nobr/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "637b42da-4c41-4c35-9940-94f9f0237ece",
+      "comment": "",
+      "command": "click",
+      "target": "id=ox_cuponesfarmacia_Cupon__descripcion",
+      "targets": [
+        ["id=ox_cuponesfarmacia_Cupon__descripcion", "id"],
+        ["name=ox_cuponesfarmacia_Cupon__descripcion", "name"],
+        ["css=#ox_cuponesfarmacia_Cupon__descripcion", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Cupon__descripcion']", "xpath:attributes"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_Cupon__editor_descripcion']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/span/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "343463bb-d63b-4911-9698-e55006a24caf",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Cupon__collection_farmaciasAceptadas___ .ox-button-bar-button:nth-child(1) .ox-action-label",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Cupon__collection_farmaciasAceptadas___ .ox-button-bar-button:nth-child(1) .ox-action-label", "css:finder"],
+        ["xpath=//div[@id='ox_cuponesfarmacia_Cupon__collection_farmaciasAceptadas___']/table/tbody/tr/td/span/a/span", "xpath:idRelative"],
+        ["xpath=//td/span/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "016766e5-2fce-4ab4-8654-58ba944a2b52",
+      "comment": "",
+      "command": "click",
+      "target": "name=ox_cuponesfarmacia_Cupon__xava_selected",
+      "targets": [
+        ["name=ox_cuponesfarmacia_Cupon__xava_selected", "name"],
+        ["css=#ox_cuponesfarmacia_Cupon__0 .xava_selected", "css:finder"],
+        ["xpath=//input[@name='ox_cuponesfarmacia_Cupon__xava_selected']", "xpath:attributes"],
+        ["xpath=//tr[@id='ox_cuponesfarmacia_Cupon__0']/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "abff7644-00e0-47b1-91ce-6883ebdb5170",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Cupon__2 .xava_selected",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Cupon__2 .xava_selected", "css:finder"],
+        ["xpath=(//input[@name='ox_cuponesfarmacia_Cupon__xava_selected'])[3]", "xpath:attributes"],
+        ["xpath=//tr[@id='ox_cuponesfarmacia_Cupon__2']/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8d93c109-0ce2-4bcf-9681-96fbf5070058",
+      "comment": "",
+      "command": "click",
+      "target": "id=ox_cuponesfarmacia_Cupon__AddToCollection___add",
+      "targets": [
+        ["id=ox_cuponesfarmacia_Cupon__AddToCollection___add", "id"],
+        ["css=#ox_cuponesfarmacia_Cupon__AddToCollection___add", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Cupon__AddToCollection___add']", "xpath:attributes"],
+        ["xpath=//div[@id='ox_cuponesfarmacia_Cupon__bottom_buttons']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b0ceb5b-93c5-4e77-abdf-452c51b71595",
+      "comment": "",
+      "command": "click",
+      "target": "id=ox_cuponesfarmacia_Cupon__descripcion",
+      "targets": [
+        ["id=ox_cuponesfarmacia_Cupon__descripcion", "id"],
+        ["name=ox_cuponesfarmacia_Cupon__descripcion", "name"],
+        ["css=#ox_cuponesfarmacia_Cupon__descripcion", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Cupon__descripcion']", "xpath:attributes"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_Cupon__editor_descripcion']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/span/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce18d1af-a5c9-45f9-8fe4-49a42f2cf186",
+      "comment": "",
+      "command": "click",
+      "target": "id=ox_cuponesfarmacia_Cupon__descripcion",
+      "targets": [
+        ["id=ox_cuponesfarmacia_Cupon__descripcion", "id"],
+        ["name=ox_cuponesfarmacia_Cupon__descripcion", "name"],
+        ["css=#ox_cuponesfarmacia_Cupon__descripcion", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Cupon__descripcion']", "xpath:attributes"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_Cupon__editor_descripcion']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/span/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "758556fc-41ac-4a6b-ab6f-bef8766d1eaf",
+      "comment": "",
+      "command": "type",
+      "target": "id=ox_cuponesfarmacia_Cupon__descripcion",
+      "targets": [
+        ["id=ox_cuponesfarmacia_Cupon__descripcion", "id"],
+        ["name=ox_cuponesfarmacia_Cupon__descripcion", "name"],
+        ["css=#ox_cuponesfarmacia_Cupon__descripcion", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Cupon__descripcion']", "xpath:attributes"],
+        ["xpath=//span[@id='ox_cuponesfarmacia_Cupon__editor_descripcion']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[5]/span/input[2]", "xpath:position"]
+      ],
+      "value": "Insulina de larga duración 2X1"
+    }, {
+      "id": "f3ffacf6-0cc0-4a29-bd00-98ff6c451bf6",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Cupon__bottom_buttons > #ox_cuponesfarmacia_Cupon__CRUD___save",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Cupon__bottom_buttons > #ox_cuponesfarmacia_Cupon__CRUD___save", "css:finder"],
+        ["xpath=//input[@id='ox_cuponesfarmacia_Cupon__CRUD___save']", "xpath:attributes"],
+        ["xpath=//div[@id='ox_cuponesfarmacia_Cupon__bottom_buttons']/input[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7342f455-5106-43e5-bb4e-d44f857b2c7d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#Cupon_module > .module-name",
+      "targets": [
+        ["css=#Cupon_module > .module-name", "css:finder"],
+        ["xpath=//div[@id='Cupon_module']/div", "xpath:idRelative"],
+        ["xpath=//a/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1ac7f39a-938f-49c1-8eb5-bf960cffdb76",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "css=#ox_cuponesfarmacia_Cupon__0 > .ox-list-pair:nth-child(5)",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Cupon__0 > .ox-list-pair:nth-child(5)", "css:finder"],
+        ["xpath=//tr[@id='ox_cuponesfarmacia_Cupon__0']/td[5]", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9a1a88d-c21d-4832-8ae9-55d25673bcb4",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f233ea4f-de51-45d8-99fc-bbf90ce7ed9f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ox_cuponesfarmacia_Cupon__0 .mdi-delete",
+      "targets": [
+        ["css=#ox_cuponesfarmacia_Cupon__0 .mdi-delete", "css:finder"],
+        ["xpath=//tr[@id='ox_cuponesfarmacia_Cupon__0']/td/nobr/a[2]/i", "xpath:idRelative"],
+        ["xpath=//td/nobr/a[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7c29e8c-ffae-4ed3-afcc-45a4077e139e",
+      "comment": "",
+      "command": "assertConfirmation",
+      "target": "Borrar registro de la fila 1: ¿Estás seguro?",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6cbf982d-fe7c-4f0a-acf6-0b2289fa78b7",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9fc48b7c-ecac-432c-b479-29bedba59d14",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://medivoucher.mindsoftdev.com:8080/", "http://medivoucher.mindsoftdev.com:8080/cuponesfarmacia"],
+  "plugins": []
+}
